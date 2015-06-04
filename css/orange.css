@@ -1,0 +1,14 @@
+body{
+	background-color: #d35400;
+}
+
+.frame-content{
+	background-color: #e67e22;
+	color:#fff;
+}
+
+.circle{
+	background-color: #d35400;
+	border-color: #e67e22;
+	color: #e67e22;
+}

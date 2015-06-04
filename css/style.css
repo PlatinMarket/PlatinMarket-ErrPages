@@ -1,0 +1,110 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+div.frame-table {
+	width: 100%;
+	padding: 0;
+	display: table;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+div.frame-cell {
+	padding: 0;
+	vertical-align: middle;
+	display: table-cell;
+	margin: 0;
+}
+
+div.frame-content {
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.15);
+			box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.15);
+}
+
+div.container{
+	position:relative;
+}
+
+h1.title{
+	font-weight:700;
+}
+
+h4.slogan{
+	font-weight:400;
+	margin-bottom:20px;
+}
+
+div.circle{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	display: block;
+	right:0;
+	border-width: 30px;
+	border-style:solid;
+	border-radius: 140px;
+	text-align: center;
+	outline:none;
+	-webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.15);
+			box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.15);
+}
+
+div.circle .fa{
+	font-size: 140px;
+}
+
+kbd{
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:none;
+			box-shadow:none;
+}
+
+@media screen and (max-width: 767px) {
+	.circle{
+		position:static!important;
+		margin:0 auto;
+	}
+	.title {
+		text-align:center;
+		font-size:28px;
+	}
+	.slogan {
+		text-align:center;
+		font-size:16px;
+		line-height:130%;
+	}
+}
+
+@media (min-width: 768px) {
+  .circle {
+    margin-top: -30px;
+  }  
+  .title {
+    font-size:38px;
+  }
+}
+@media (min-width: 992px) {
+  .circle {
+    margin-top: -30px;
+  }
+  .title {
+    font-size:38px;
+  }
+}
+@media (min-width: 1200px) {
+  .circle {
+    margin-top: -40px;
+  }
+  .title {
+    font-size:42px;
+  }
+}
