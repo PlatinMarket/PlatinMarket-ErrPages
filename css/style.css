@@ -1,27 +1,26 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	padding: 0;
 	width: 100%;
 	height: 100%;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+			user-select: none;   
 }
 
 div.frame-table {
 	width: 100%;
-	padding: 0;
-	display: table;
 	height: 100%;
+	display: table;
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 0;
 }
 
 div.frame-cell {
-	padding: 0;
 	vertical-align: middle;
 	display: table-cell;
-	margin: 0;
 }
 
 div.frame-content {
@@ -43,7 +42,7 @@ h4.slogan{
 	margin-bottom:20px;
 }
 
-div.circle{
+div.shape{
 	width: 200px;
 	height: 200px;
 	position: absolute;
@@ -51,15 +50,23 @@ div.circle{
 	right:0;
 	border-width: 30px;
 	border-style:solid;
-	border-radius: 140px;
 	text-align: center;
 	outline:none;
 	-webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.15);
 			box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.15);
 }
 
+div.circle{
+	border-radius: 140px;
+}
+
 div.circle .fa{
 	font-size: 140px;
+}
+
+div.square .fa{
+	font-size: 140px;
+	line-height:150px;
 }
 
 kbd{
@@ -69,7 +76,7 @@ kbd{
 }
 
 @media screen and (max-width: 767px) {
-	.circle{
+	.shape{
 		position:static!important;
 		margin:0 auto;
 	}
@@ -85,7 +92,7 @@ kbd{
 }
 
 @media (min-width: 768px) {
-  .circle {
+  .shape {
     margin-top: -30px;
   }  
   .title {
@@ -93,7 +100,7 @@ kbd{
   }
 }
 @media (min-width: 992px) {
-  .circle {
+  .shape {
     margin-top: -30px;
   }
   .title {
@@ -101,7 +108,7 @@ kbd{
   }
 }
 @media (min-width: 1200px) {
-  .circle {
+  .shape {
     margin-top: -40px;
   }
   .title {
