@@ -12,3 +12,11 @@ body{
 	border-color: #3498db;
 	color: #3498db;
 }
+
+.link,
+.link:hover,
+.link:active,
+.link:link,
+.link:visited{
+	color:#fff;
+}

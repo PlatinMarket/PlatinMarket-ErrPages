@@ -75,6 +75,10 @@ kbd{
 			box-shadow:none;
 }
 
+a.link{
+	font-weight:600;
+}
+
 @media screen and (max-width: 767px) {
 	.shape{
 		position:static!important;
