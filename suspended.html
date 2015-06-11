@@ -19,13 +19,21 @@
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 					<div class="shape circle"><i class="fa fa-clock-o"></i></div>
 				</div>
-				<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-					<h1 class="title">Hizmetiniz duraklatıldı!</h1>
-					<h4 class="slogan">Eğer bir hata olduğunu düşünüyorsanız, bizimle irtibata geçmek için <a class="link" href="http://destek.platinmarket.com" target="blank">tıklayın.</a></h4>
-				</div>
+				<form id="ticketsubmit" method="POST" action="http://destek.platinmarket.com/index.php?/Tickets/Submit/RenderForm/6/">
+					<input type="hidden" name="ticketfullname" value=""/>
+					<input type="hidden" name="ticketsubject" value=""/>
+					<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+						<h1 class="title">Hizmetiniz duraklatıldı!</h1>
+						<h4 class="slogan">Eğer bir hata olduğunu düşünüyorsanız, bizimle irtibata geçmek için <a class="link" type="submit" href="#" onclick="javascript:submit();">tıklayın.</a></h4>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 </div>
+<script>
+	document.getElementsByName('ticketfullname')[0].value = window.location.hostname;
+	document.getElementsByName('ticketsubject')[0].value = "Hizmetim Duraklatılmış";
+</script>
 </body>
 </html>
